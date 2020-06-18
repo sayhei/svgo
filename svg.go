@@ -414,7 +414,7 @@ func (svg *SVG) Text(x int, y int, t string, s ...string) {
 // Textpath places text optionally styled text along a previously defined path
 // Standard Reference: http://www.w3.org/TR/SVG11/text.html#TextPathElement
 func (svg *SVG) Textpath(t string, pathid string,startOffset string, s ...string) {
-	svg.printf("<text %s<textPath startOffset=\"%s\" xlink:href=\"%s\">", endstyle(s, ">"), pathid,startOffset)
+	svg.printf("<text %s<textPath startOffset=\"%s\" xlink:href=\"%s\">", endstyle(s, ">"),startOffset,pathid)
 	xml.Escape(svg.Writer, []byte(t))
 	svg.println(`</textPath></text>`)
 }
