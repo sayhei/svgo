@@ -42,13 +42,13 @@ See svgdef.[svg|png|pdf] for a graphical view of the function calls
 
 Usage: (assuming GOPATH is set)
 
-	go get github.com/ajstarks/svgo
-	go install github.com/ajstarks/svgo/...
+	go get github.com/sayhei/svgo
+	go install github.com/sayhei/svgo/...
 	
 	
 You can use godoc to browse the documentation from the command line:
 
-	$ go doc github.com/ajstarks/svgo
+	$ go doc github.com/sayhei/svgo
 	
 
 a minimal program, to generate SVG to standard output.
